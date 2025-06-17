@@ -30,4 +30,16 @@ All attributes were manually recorded and visualized using Tableau.
 - Expand dataset with more diverse prompts
 - Perform clustering or correlation analysis
 - Compare across models
-
+  
+## Model Details
+Platform: Tensor.Art
+Model Used: majicmix realistic v7
+Resolution: 640×640-square
+Prompt: "portrait of a young adult, ultra‑realistic, close‑up, neutral expression, studio lighting"
+Negative Prompt: signature, username, logo, bad hands, mutated hands, lowres, (worst quality, bad quality:1.2), bad anatomy, sketch, jpeg artifacts, watermark, censored.
+CFG Scale: 7
+Sampling Method: Euler Ancestral
+Sampling Steps: 25
+Upscaler: None
+VAE: Default
+Hi-res Steps / Denoising Strength: 20 / 0.5

@@ -1,61 +1,33 @@
-# Style2Stats 🎨📊
+# Style2Stats – Phase 1
 
-A data science mini-project exploring correlations between visual features in AI-generated portraits.
+An analysis project exploring visual traits in AI-generated portraits using TensorArt and Tableau.
 
----
+## Project Summary
 
-## 📌 Overview
+100 AI-generated images were analyzed based on attributes like:
+- Hair length
+- Hair color
+- Eye color
 
-This project investigates possible relationships between **hair color**, **eye color**, and other facial features by generating portraits using AI models (via [Tensor.art](https://tensor.art)). The final goal is to visualize patterns and biases in generative outputs.
+All attributes were manually recorded and visualized using Tableau.
 
----
+## Files Included
+- `img_attributes_phase1.xlsx`: Annotated dataset
+- `style2stats_phase1.twbx`: Packaged Tableau dashboard
+- `LICENSE`: MIT License
 
-## 🔄 Workflow (Phases)
+## Observations
+- All generated faces were Asian females with dark hair/eyes, indicating prompt/model bias.
+- Hair length was overwhelmingly long (97%).
 
-### ✅ Phase 1 – Data Generation & Annotation
-- 100 images generated using **Majicmix Realistic v7**
-- Fixed prompt:  
-  `"portrait of a young adult, ultra‑realistic, close‑up, neutral expression, studio lighting, 640×640"`
-- All outputs were female, Asian, with black hair and eyes
-- Annotated features recorded manually in a `.csv` dataset
+## Tools Used
+- TensorArt (Image generation)
+- Google Sheets (Data entry)
+- Tableau (Data visualization)
+- Git & GitHub (Version control)
 
-📂 [Dataset CSV](./img_attributes_phase_1.csv)  
-📸 [Image folder](./dataset/images)
+## Next Steps
+- Expand dataset with more diverse prompts
+- Perform clustering or correlation analysis
+- Compare across models
 
----
-
-## 🧠 Observations (So Far)
-
-- Model bias detected: lack of gender/ethnicity diversity
-- Minimal variability in hair/eye color
-- Very few short hairstyles
-- Possible slight variation in lighting (day/night)
-
----
-
-## ⚠️ Limitations
-
-- Model outputs are biased despite a fixed prompt
-- Ethnicity and gender were **excluded from analysis** due to no variability
-- Small sample size: only 100 images in Phase 1
-
----
-
-## 📊 Upcoming Phases
-
-- **Phase 2:** Visual analysis in **Tableau**
-- **Phase 3:** Expand dataset to 300+ images with diverse prompts
-- **Phase 4:** Publish findings as a blog or interactive dashboard
-
----
-
-## 📁 Project Structure
-
-style2stats/
-├── dataset/
-│ └── images/
-│ └── img-1.jpg to img-100.jpg
-├── img_attributes_phase_1.csv
-├── README.md
-├── LICENSE
-└── .gitignore
